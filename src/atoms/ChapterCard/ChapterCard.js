@@ -10,10 +10,10 @@ function ChapterCard() {
 
                 </div>
                 <div className="title">
-
+                    01. Introduction
                 </div>
                 <div className="btn">
-
+                    1 Hour, 10 min
                 </div>
             </div>
         </div>
