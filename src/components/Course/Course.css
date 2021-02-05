@@ -1,9 +1,40 @@
+.background-top {
+    position: absolute;
+    z-index: 2;
+    height: 250px;
+    width: 100%;
+    background-color: #172377;
+    border-bottom-left-radius: 100px;
+}
+
+.background-patch {
+    position: absolute;
+    z-index: 2;
+    margin-left: 50%;
+    height: 300px;
+    margin-top: 250px;
+    width: 50%;
+    background-color: #172377;
+}
+
+.background-bottom {
+    position: absolute;
+    z-index: 2;
+    height: 400px;
+    margin-top: 250px;
+    width: 100%;
+    background-color: white;
+    border-top-right-radius: 200px;
+}
+
 .course {
     margin-top: 20px;
     width: 100%;
     height: auto;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     text-align: left;
+    position: absolute;
+    z-index: 3;
 }
 
 .course-wrapper {
@@ -13,6 +44,7 @@
     font-size: 2rem;
     font-weight: 400;
     padding: 20px 20px;
+    color: white;
 }
 
 .course-wrapper .top-title {
@@ -25,11 +57,12 @@
     margin-left: 20px;
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;
 }
 
 .course-wrapper .top-title .right {
     text-align: right;
-    color: red;
+    color: orange;
     font-size: 1rem;
     padding-right: 20px;
 }
