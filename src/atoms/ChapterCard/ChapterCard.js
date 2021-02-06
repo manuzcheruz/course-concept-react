@@ -2,18 +2,23 @@ import React from 'react';
 
 import './ChapterCard.css';
 
-function ChapterCard() {
+function ChapterCard({image, title, time, icon}) {
     return (
         <div className="card-chapter">
             <div className="body">
                 <div className="image">
-
+                    {image}
                 </div>
                 <div className="title">
-                    01. Introduction
+                    <div className="main">
+                        {title}
+                    </div>
+                    <div className="sub">
+                        {time}
+                    </div>
                 </div>
                 <div className="btn">
-                    1 Hour, 10 min
+                    {icon}
                 </div>
             </div>
         </div>

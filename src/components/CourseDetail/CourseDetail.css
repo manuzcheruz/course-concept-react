@@ -1,0 +1,97 @@
+.bottom1 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 230px;
+    height: 70px;
+    width: 100%;
+    background-color: #172377;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+} 
+
+.bottom2 {
+    position: absolute;
+    z-index: 1;
+    margin-top: 200px;
+    height: 100px;
+    width: 20%;
+    background-color: #BDBFE6;
+}
+
+.bottom3 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 290px;
+    height: 100px;
+    width: 20%;
+    background-color: #172377;
+}
+
+.bottom4 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 140px;
+    margin-left: 80%;
+    height: 100px;
+    width: 20%;
+    background-color: #172377;
+}
+
+.bottom5 {
+    position: absolute;
+    z-index: 3;
+    height: 232px;
+    width: 100%;
+    border-bottom-right-radius: 80px;
+    background-color: #BDBFE6;
+}
+
+.bottom6 {
+    position: absolute;
+    z-index: 3;
+    margin-top: 301px;
+    height: 202px;
+    width: 100%;
+    border-top-left-radius: 80px;
+    background-color: white;
+}
+
+.bottom6 .top-content {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    padding: 40px 20px 20px;
+}
+
+.bottom6 .top-content .title {
+    font-size: 1.7rem;
+    font-weight: bold;
+} 
+
+.bottom6 .top-content .cost {
+    margin-top: 15px;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.bottom6 .middle-content {
+    padding: 0px 20px;
+}
+
+.bottom6 .middle-content .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bottom6 .middle-content .content {
+    padding: 10px 0px;
+    font-size: 0.8rem;
+    color: grey;
+    line-height: 20px;
+}
+
+.bottom6 .chapters {
+    padding: 0px 20px;
+}
+
+
+

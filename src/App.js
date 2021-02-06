@@ -1,14 +1,20 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
+
 import Course from './components/Course/Course';
-// import Homepage from './components/Homepage/Homepage';
+import CourseDetail from './components/CourseDetail/CourseDetail';
 import Layout from './hoc/Layout/Layout';
 
 function App() {
   return (
-    <Layout>
-      {/* <Homepage /> */}
-      <Course />
-    </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Switch>
+          <Route path='/course' component={CourseDetail} />
+          <Route path='/' component={Course} />
+        </Switch>
+      </Layout>
+    </BrowserRouter>
   )
 }
 

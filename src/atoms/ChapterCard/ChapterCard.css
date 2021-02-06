@@ -1,6 +1,6 @@
 .card-chapter {
-    height: 70px;
-    width: 90%;
+    height: 80px;
+    width: 100%;
     border-radius: 8px;
     background-color: #FFF5E6;
     margin-bottom: 15px;
@@ -14,10 +14,10 @@
 }
 
 .card-chapter .body .image {
-    height: 100%;
-    width: 100%;
-    border-radius: 8px;
-    background-color: blue;
+    height: 60px;
+    width: 70px;
+    border-radius: 15px;
+    /* background-color: blue; */
 }
 
 .card-chapter .body .title {
@@ -31,7 +31,11 @@
 }
 
 .card-chapter .body .title .sub {
-    margin-top: 8px;
-    font-size: 0.6rem;
+    margin-top: 12px;
+    font-size: 0.7rem;
     color: grey;
+}
+
+.card-chapter .body .btn {
+    padding-top: 15px;
 }
