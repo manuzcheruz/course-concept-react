@@ -1,19 +1,57 @@
 import React from 'react';
 import Aux from '../../hoc/Aux/Aux';
 import ChapterCard from '../../atoms/ChapterCard/ChapterCard';
-import { Lock, Play } from '../../assets/icons'
+import { Basket, Group, Heart, Lock, Play, Star } from '../../assets/icons'
 import { Faq, Snow, Walk, Work } from '../../assets/illustrators'
 
 import './CourseDetail.css';
+import Navbar from '../Navbar/Navbar';
 
 function CourseDetail() {
     return (
         <Aux>
-            <div className="bottom1"></div>
+            <Navbar />
+            <div className="bottom">
+                <span>
+                    <Basket height={50} color='#FF4886' />
+                </span>
+            </div>
+            <div className="bottom1">
+                <div className="icons">
+                    <div className="item">
+                        <span className="icon">
+                            <Group height={20} color='#C39366' />
+                        </span>
+                        <span className="text">
+                            28K
+                        </span>
+                    </div>
+                    <div className="item" style={{textAlign: 'center'}}>
+                        <span className="icon">
+                            <Star height={20} color='#C39366' />
+                        </span>
+                        <span className="text">
+                            5.0
+                        </span>
+                    </div>
+                    <div className="item" style={{textAlign: 'right'}}>
+                        <span className="icon">
+                            <Heart height={20} color='#C39366' />
+                        </span>
+                        <span className="text">
+                            18K
+                        </span>
+                    </div>
+                </div>
+            </div>
             <div className="bottom2"></div>
             <div className="bottom3"></div>
             <div className="bottom4"></div>
-            <div className="bottom5"></div>
+            <div className="bottom5">
+                <span>
+                    <Faq height={220} width={330}/>
+                </span>
+            </div>
             <div className="bottom6">
                 <div className="top-content">
                     <div className="title">
@@ -39,7 +77,7 @@ function CourseDetail() {
                         image={<Snow height={50} width={70} />}
                         title='01. Introduction'
                         time='2 min 5 sec'
-                        icon={<Play height={30} color='red' />} />
+                        icon={<Play height={30} color='#FF4886' />} />
                     <ChapterCard 
                         image={<Walk height={50} width={70} />}
                         title='02. Basics of Animation'

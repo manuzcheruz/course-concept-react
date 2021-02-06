@@ -4,17 +4,38 @@ import CourseCard from '../../atoms/CourseCard/CourseCard';
 import { Bike, Work, Snow, Faq, Walk } from '../../assets/illustrators';
  
 import './Course.css';
+import Navbar from '../Navbar/Navbar';
+import { Link } from 'react-router-dom';
+
+const courses = [
+    {
+        title: '3D character Design - Blender',
+        image: <Walk height={150} width={220} />,
+        bgColor: '#34AAFA'
+    },
+    {
+        title: 'Character Design 3D C4D',
+        image: <Faq height={150} width={220} />,
+        bgColor: '#F1ADAC'
+    },
+    {
+        title: 'Basic 3d Animation Tutorial',
+        image: <Snow height={150} width={220} />,
+        bgColor: '#8588CE'
+    }
+]
 
 function Course() {
     return (
         <Aux>
+            <Navbar home/>
             <div className="background-top"></div>
             <div className="background-patch"></div>
             <div className="background-bottom"></div>
             <div className="course">
                 <div className="course-wrapper">
                     <div className="top">
-                        What you want to <br />
+                        What do you want to <br />
                         Learn Today?
                     </div>
                     <div className="top-title">
@@ -26,21 +47,17 @@ function Course() {
                         </div>
                     </div>
                     <div className="popular-scroll">
-                        <CourseCard 
-                                image={<Walk height={150} width={220} />}
-                                title='3D character Design - Blender' 
-                                bgColor='#34AAFA'
-                                main />
-                        <CourseCard 
-                                image={<Faq height={150} width={220} />}
-                                title='Character Design 3D C4D' 
-                                bgColor="#F1ADAC"
-                                main />
-                        <CourseCard 
-                                image={<Snow height={150} width={220} />}
-                                title='Basic 3d Animation Tutorial' 
-                                main
-                                bgColor="#8588CE"  />
+                        {courses.map((item ,i) => {
+                            let marginRight = ''
+                            if (i === 2){
+                                marginRight = '20px'
+                            }
+                            return (
+                                <Link to='/course' key={i}>
+                                    <CourseCard {...item} main margin={marginRight} />
+                                </Link>
+                            )
+                        })}
                     </div>
                     <div className="top-title">
                         <div className="left" style={{color: 'black'}}>

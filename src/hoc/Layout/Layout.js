@@ -1,11 +1,9 @@
-import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Aux from '../Aux/Aux'
+import React from 'react';
+import Aux from '../Aux/Aux';
 
 function Layout(props) {
     return (
         <Aux>
-            <Navbar />
             <main>
                 {props.children}
             </main>
@@ -13,4 +11,4 @@ function Layout(props) {
     )
 }
 
-export default Layout
+export default Layout;

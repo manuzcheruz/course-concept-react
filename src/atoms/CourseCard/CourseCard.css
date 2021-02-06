@@ -8,6 +8,15 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card-course {
+    transition: .8s;
+}
+
+.card-course:hover {
+    height: 275px;
+    width: 260px;
+}
+
 .card-course .body {
     padding: 5px 5px;
 }
@@ -35,10 +44,15 @@
     font-weight: bold;
 }
 
-.card-course .body .bottom {
+.card-course .body .bottom-card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.6fr 1fr 1fr;
     padding: 15px 5px;
+}
+
+.card-course .body .bottom-card .item {
+    font-size: 0.8rem;
+    color: grey;
 }
 
 .card-course .body .bottom-small-card {
